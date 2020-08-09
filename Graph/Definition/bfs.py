@@ -3,7 +3,7 @@
 - 정점을 저장하고 거장된 정점 중 가장 먼저 저장된 정점을 선택하며 해당 정점에 대한 작업을 하는 과정을 들어보자.
 """
 
-def dfs(start, graph):
+def bfs(start, graph):
     from collections import deque, defaultdict
     check_dic = defaultdict(lambda: False)
     q = deque()
@@ -29,4 +29,4 @@ if __name__ == "__main__":
         7: [6]
     }
     start = 1
-    dfs(1, graph)
+    bfs(1, graph)
